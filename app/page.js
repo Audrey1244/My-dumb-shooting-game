@@ -254,7 +254,7 @@ export default function Game() {
         {gameState === "LOST" && (
           <div className="absolute inset-0 bg-black/95 flex flex-col items-center justify-center text-center">
             <h2 className="text-4xl text-red-600 font-bold mb-2">ERROR! ERROR!</h2>
-            <p className="text-yellow-400 text-sm max-w-xs mb-6">Systems Shutting Down....</p>
+            <p className="text-gray-400 text-sm max-w-xs mb-6">Systems Shutting Down....</p>
             <span className="text-xs text-zinc-600 animate-pulse">Closing window...</span>
           </div>
         )}
