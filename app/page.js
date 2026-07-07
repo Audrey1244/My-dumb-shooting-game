@@ -222,7 +222,7 @@ export default function Game() {
 
       {gameState === "PLAYING" && (
         <div className="w-[500px] flex justify-between bg-zinc-900 p-3 rounded-t-lg border-x border-t border-zinc-700">
-          <div>HP: <span className="text-red-500">{"❤️".repeat(hp)}</span></div>
+          <div>HP: <span className="text-red-500">{"💙".repeat(hp)}</span></div>
           <div>Score: <span className="text-yellow-400">{score}</span></div>
           <div className="w-1/3 bg-zinc-800 rounded h-6 relative overflow-hidden">
             <div className="bg-red-600 h-full transition-all duration-100" style={{ width: `${(distance / TARGET_DISTANCE) * 100}%` }}></div>
