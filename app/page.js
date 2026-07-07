@@ -237,7 +237,7 @@ export default function Game() {
         {gameState === "START" && (
           <div className="absolute inset-0 bg-black/80 flex flex-col items-center justify-center p-6 text-center">
             <h2 className="text-2xl text-blue-400 font-bold mb-2">Help Tom reach the Red Army Base!</h2>
-            <p className="text-gray-400 text-sm max-w-sm mb-6">Avoid getting shot or rammed by Tord's Red Army clones. 3 hits and you lose.</p>
+            <p className="text-gray-400 text-sm max-w-sm mb-6">Avoid getting rammed by Tord's Red Army clones. 3 hits and you lose.</p>
             <button onClick={startGame} className="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded text-lg font-bold transition">START MISSION</button>
           </div>
         )}
@@ -253,8 +253,8 @@ export default function Game() {
 
         {gameState === "LOST" && (
           <div className="absolute inset-0 bg-black/95 flex flex-col items-center justify-center text-center">
-            <h2 className="text-4xl text-red-600 font-bold mb-2">TOM WAS DEFEATED</h2>
-            <p className="text-gray-400 text-sm max-w-xs mb-6">The app will now close due to system damage.</p>
+            <h2 className="text-4xl text-red-600 font-bold mb-2">ERROR! ERROR!</h2>
+            <p className="text-yellow-400 text-sm max-w-xs mb-6">Systems Shutting Down....</p>
             <span className="text-xs text-zinc-600 animate-pulse">Closing window...</span>
           </div>
         )}
