@@ -1,0 +1,19 @@
+# 1. Initialize a new local Git repository
+git init
+
+# 2. Add all your game files to the staging area
+git add .
+
+# 3. Commit the files with a clear note
+git commit -m "Add core game mechanics and local storage leaderboard"
+
+# 4. Set your primary branch name to 'main'
+git branch -M main
+
+# 5. Link your local project to your online GitHub repository
+# (Replace the URL with your actual GitHub repository URL)
+git remote add origin https://github.com
+
+# 6. Push your local files up to GitHub
+git push -u origin main
+
